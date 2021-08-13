@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  font-family: 'Futura', 'Helvetica Neue', sans-serif;
+  color: #fefaf0;
+}
+header {
+  background: url(img/wild-woods-cover.jpg) center/cover no-repeat;
+  min-height: 78vh;
+  padding-top: 12vh;
+  text-align: center;
+}
+.blurb {
+  margin: 7em auto;
+  padding: 1.2em;
+  background-color: #00000066;
+  border-radius: 2px;
+  font-size: 1.2rem;
+  width: 680px;
+  text-shadow: 1px 1px 2px black;
+}
+.heading {
+  font-size: 2.2rem;
+  margin-bottom: .25em;
+  text-decoration: underline;
+}
+.gallery {
+  padding: 4em 2em;
+  text-align: center;
+}
+.gallery .heading {
+  padding-bottom: 48px;
+}
+.gallery img {
+  cursor: pointer;
+  transition: 0.2s transform ease;
+}
+.gallery img:hover {
+  transform: scale(1.05);
+}
+.img-zoom {
+  height: 300px;
+  width: 400px;
+  overflow: hidden;
+  display: inline-block;
+}
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 1.4rem;
+  padding: 3em 0;
+}
+.section div {
+  width: 40%;
+}
+.section div img {
+  width: 100%;
+}
+body>div:nth-child(even) {
+  background-color: #f7e0ce;
+  color: #331c0b;
+}
+.section.two {
+  background: url(img/lights-on-trees.jpg) center/cover no-repeat;
+  background-position-y: bottom;
+  height: 400px;
+}
+.section.four {
+  background: url(img/deck-planters.jpg) center/cover no-repeat;
+  height: 400px;
+}
+.section.six {
+  background: url(img/fog-pouring-in.jpg) center/cover no-repeat;
+  height: 400px;
+}
+.img-container {
+  border: 1px solid #331c0b;
+  border-radius: 2px;
+  padding: 4px;
+}
+.footer {
+  padding: 2em;
+  text-align: center;
+}
+
+#lightbox {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000cc;
+  font-size: 3em;
+}
+#lightbox-close {
+  cursor: pointer;
+  padding: 3px 25px 5px;
+}
+#lightbox-close:hover {
+  color: #d22929;
+}
+#lightbox-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#lightbox-image {
+  max-width: 72%;
+}
+#lightbox-prev,
+#lightbox-next {
+  cursor: pointer;
+  padding: .2em;
+}
+#lightbox-prev:hover,
+#lightbox-next:hover {
+  color: #13eaea;
+}
