@@ -1,22 +1,30 @@
 body {
   margin: 0;
   font-family: 'Futura', 'Helvetica Neue', sans-serif;
-  color: #fefaf0;
+  line-height: 1.5;
+  color: #fff3e7;
 }
 header {
   background: url(img/wild-woods-cover.jpg) center/cover no-repeat;
-  min-height: 78vh;
-  padding-top: 12vh;
+  min-height: 79vh;
+  padding-top: 13vh;
   text-align: center;
 }
+a, a:visited {
+  color: #55b5b5;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
 .blurb {
-  margin: 7em auto;
-  padding: 1.2em;
-  background-color: #00000066;
+  margin: 6em auto 0;
+  padding: .8em;
+  background-color: #111111bb;
   border-radius: 2px;
   font-size: 1.2rem;
   width: 680px;
-  text-shadow: 1px 1px 2px black;
+  text-shadow: 1px 1px 2px #000000cc;
 }
 .heading {
   font-size: 2.2rem;
@@ -44,39 +52,52 @@ header {
   display: inline-block;
 }
 .section {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
   font-size: 1.4rem;
   padding: 3em 0;
 }
-.section div {
+.text {
+  padding: 4em 0;
+  height: 300px;
+  text-align: center;
+  text-shadow: 1px 1px 1px #000000cc;
+}
+.text>div {
+  margin: auto;
+  padding: .8em;
+  width: 60%;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.flex div {
   width: 40%;
 }
-.section div img {
+.flex div img {
   width: 100%;
 }
 body>div:nth-child(even) {
-  background-color: #f7e0ce;
+  background-color: #f5e6d5;
   color: #331c0b;
 }
 .section.two {
   background: url(img/lights-on-trees.jpg) center/cover no-repeat;
   background-position-y: bottom;
-  height: 400px;
 }
 .section.four {
   background: url(img/deck-planters.jpg) center/cover no-repeat;
-  height: 400px;
 }
 .section.six {
   background: url(img/fog-pouring-in.jpg) center/cover no-repeat;
-  height: 400px;
 }
 .img-container {
   border: 1px solid #331c0b;
   border-radius: 2px;
   padding: 4px;
+}
+.contact {
+  margin-top: 5px;
 }
 .footer {
   padding: 2em;
